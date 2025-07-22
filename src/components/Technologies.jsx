@@ -21,7 +21,7 @@ const iconVariants = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div className="h-90" id="technologies">
+    <div className="lg:h-90 py-10" id="technologies">
       <Motion.h2
        whileInView={{opacity: 1, y: 0}}
        initial={{opacity:0, y: -100}}
@@ -33,7 +33,7 @@ const Technologies = () => {
       whileInView={{opacity: 1, x: 0}}
       initial= {{opacity: 0, x: -100}}
       transition={{duration: 1.5}}
-      className=" flex flex-wrap items-center justify-center gap-16 mt-20">
+      className=" flex flex-wrap items-center justify-center gap-16 mt-15">
         <Motion.div
         initial="initial"
         animate="animate"

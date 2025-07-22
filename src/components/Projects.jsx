@@ -1,147 +1,69 @@
 import { motion as Motion } from "framer-motion";
+import CardProject from "./CardProject";
+
+const projects = [
+  { src: "pro2.png", name: "Al Khan", link: "https://alkhan-inky.vercel.app/" },
+  { src: "asas.png", name: "ASAS", link: "https://qedaiiis.github.io/ASAS/" },
+  {
+    src: "maldiva.png",
+    name: "MALDIVA",
+    link: "https://qedaiiis.github.io/Maldiva/",
+  },
+  {
+    src: "plant.png",
+    name: "Plant Zone",
+    link: "https://qedaiiis.github.io/Plant-Zone/",
+  },
+  { src: "blog.png", name: "BLOG", link: "https://blog-one-psi-36.vercel.app" },
+  { src: "siwqa.png", name: "SIWQA", link: "https://swiqah.vercel.app/" },
+  { src: "crud.png", name: "CRUD", link: "https://qedaiiis.github.io/CRUD/" },
+  {
+    src: "chat.png",
+    name: "Chat",
+    link: "https://qedaiiis.github.io/Chat-App/",
+  },
+  {
+    src: "blog-details.png",
+    name: "Blog Details",
+    link: "https://qedaiiis.github.io/Blog-Details/",
+  },
+    {
+    src: "golden.png",
+    name: "Golden Line",
+    link: "https://golden-line-seven.vercel.app/",
+  },
+];
 
 const Projects = () => {
   return (
-    <div className=" pb-4 w-full" id="projects">
+    <div className=" pb-4" id="projects">
+
+      <div>
+
       <Motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className=" text-center text-4xl mb-22"
+        className=" text-center text-4xl mb-10"
       >
         Projects
       </Motion.h2>
 
-      <div className=" mb-8 flex flex-wrap gap-20 lg:justify-center">
-        <Motion.div
-          className="w-full lg:w-lg"
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 1 }}
-        >
-          <img
-            src="./imgs/pro1.png"
-            alt="AlKhan"
-            className="mb-6 rounded-2xl w-full"
-          />
-        </Motion.div>
 
-        <Motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 1 }}
-          className="w-full max-w-xl lg:w-3/4"
-        >
-          <h3 className="mb-6 font-semibold text-3xl">Al Khan</h3>
-          <p className=" mb-6 text-stone-400">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt,
-            quibusdam laudantium unde, sunt nam recusandae suscipit aliquam
-            explicabo culpa provident eos, illo odit blanditiis vero. Totam
-            itaque dolores temporibus magnam?
-          </p>
+<div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-          <span className="mr-2 rounded-2xl bg-stone-900 p-2 tex-sm font-medium text-stone-300">
-            HTML
-          </span>
-          <span className="mr-2 rounded-2xl bg-stone-900 p-2 tex-sm font-medium text-stone-300">
-            CSS
-          </span>
-          <span className="mr-2 rounded-2xl bg-stone-900 p-2 tex-sm font-medium text-stone-300">
-            React
-          </span>
-          <span className="mr-2 rounded-2xl bg-stone-900 p-2 tex-sm font-medium text-stone-300">
-            Firebase
-          </span>
-        </Motion.div>
+      {projects.map((pro, index) => (
+        <CardProject
+          key={index}
+          src={pro.src}
+          name={pro.name}
+          link={pro.link}
+        />
+      ))}
+
+</div>
+
       </div>
-
-            <div className=" mb-8 flex flex-wrap gap-20 lg:justify-center">
-        <Motion.div
-          className="w-full lg:w-lg"
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 1 }}
-        >
-          <img
-            src="./imgs/pro1.png"
-            alt="AlKhan"
-            className="mb-6 rounded-2xl w-full"
-          />
-        </Motion.div>
-
-        <Motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 1 }}
-          className="w-full max-w-xl lg:w-3/4"
-        >
-          <h3 className="mb-6 font-semibold text-3xl">Al Khan</h3>
-          <p className=" mb-6 text-stone-400">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt,
-            quibusdam laudantium unde, sunt nam recusandae suscipit aliquam
-            explicabo culpa provident eos, illo odit blanditiis vero. Totam
-            itaque dolores temporibus magnam?
-          </p>
-
-          <span className="mr-2 rounded-2xl bg-stone-900 p-2 tex-sm font-medium text-stone-300">
-            HTML
-          </span>
-          <span className="mr-2 rounded-2xl bg-stone-900 p-2 tex-sm font-medium text-stone-300">
-            CSS
-          </span>
-          <span className="mr-2 rounded-2xl bg-stone-900 p-2 tex-sm font-medium text-stone-300">
-            React
-          </span>
-          <span className="mr-2 rounded-2xl bg-stone-900 p-2 tex-sm font-medium text-stone-300">
-            Firebase
-          </span>
-        </Motion.div>
-      </div>
-
-            <div className=" mb-8 flex flex-wrap gap-20 lg:justify-center">
-        <Motion.div
-          className="w-full lg:w-lg"
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 1 }}
-        >
-          <img
-            src="./imgs/pro1.png"
-            alt="AlKhan"
-            className="mb-6 rounded-2xl w-full"
-          />
-        </Motion.div>
-
-        <Motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 1 }}
-          className="w-full max-w-xl lg:w-3/4"
-        >
-          <h3 className="mb-6 font-semibold text-3xl">Al Khan</h3>
-          <p className=" mb-6 text-stone-400">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt,
-            quibusdam laudantium unde, sunt nam recusandae suscipit aliquam
-            explicabo culpa provident eos, illo odit blanditiis vero. Totam
-            itaque dolores temporibus magnam?
-          </p>
-
-          <span className="mr-2 rounded-2xl bg-stone-900 p-2 tex-sm font-medium text-stone-300">
-            HTML
-          </span>
-          <span className="mr-2 rounded-2xl bg-stone-900 p-2 tex-sm font-medium text-stone-300">
-            CSS
-          </span>
-          <span className="mr-2 rounded-2xl bg-stone-900 p-2 tex-sm font-medium text-stone-300">
-            React
-          </span>
-          <span className="mr-2 rounded-2xl bg-stone-900 p-2 tex-sm font-medium text-stone-300">
-            Firebase
-          </span>
-        </Motion.div>
-      </div>
-
-
     </div>
   );
 };
