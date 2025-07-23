@@ -33,7 +33,8 @@ const Hero = () => {
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
-            className="home__img flex justify-center lg:p-8 lg:justify-end border border-stone-900 rounded-2xl w-96 h-96"
+            className="home__img flex justify-center
+             lg:p-8 lg:justify-end border border-stone-900 rounded-2xl w-96 h-96"
           ></Motion.div>
         </div>
 
