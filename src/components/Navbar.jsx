@@ -8,9 +8,9 @@ import {
 const Navbar = () => {
   return (
     <div className="flex items-center justify-between py-6">
-      <div className=" flex shrink-0 items-center">
+      <div className=" flex shrink-0 items-center w-33">
         <a href="/" aria-label="Home" className=" text-3xl font-bold">
-          QEDAiiiS
+         <img src="./imgs/icon.png" alt="" className="w-full" />
         </a>
       </div>
 

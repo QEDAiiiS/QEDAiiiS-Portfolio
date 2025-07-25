@@ -7,7 +7,7 @@ const projects = [
   {
     src: "maldiva.png",
     name: "MALDIVA",
-    link: "https://qedaiiis.github.io/Maldiva/",
+    link: "https://qedaiiis.github.io/Maldiva/", 
   },
   {
     src: "plant.png",
