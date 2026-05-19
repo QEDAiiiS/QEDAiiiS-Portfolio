@@ -2,6 +2,7 @@ import { motion as Motion } from "framer-motion";
 import CardProject from "./CardProject";
 
 const projects = [
+  { src: "RayG.png", name: "RayG", link: "https://ray-g-app-frontend.vercel.app/login" },
   { src: "pro2.png", name: "Al Khan", link: "https://alkhan-inky.vercel.app/" },
   { src: "asas.png", name: "ASAS", link: "https://qedaiiis.github.io/ASAS/" },
   {
