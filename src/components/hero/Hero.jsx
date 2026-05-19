@@ -28,7 +28,7 @@ const Hero = () => {
     <div className="lg:mb-32" id="home">
       <div className="flex flex-wrap lg:flex-row-reverse ">
         {/* //* ================  PICTURE  ================*/}
-        <div className="w-full lg:w-1/2 flex justify-center items-center">
+        <div className="w-full lg:w-1/2 flex justify-end items-center">
           <Motion.div
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -73,7 +73,7 @@ const Hero = () => {
             </Motion.p>
             <Motion.a
               variants={childVariants}
-              href=""
+              href="/MAHMOUD-QEDAIS-CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download

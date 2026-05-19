@@ -15,7 +15,7 @@ const App = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-8">
+      <div className="container mx-auto px-8 max-w-7xl">
         <div className="max-w-8xl mx-aut">
           <Navbar />
           <Hero />
